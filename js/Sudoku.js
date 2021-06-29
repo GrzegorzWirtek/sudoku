@@ -44,13 +44,20 @@ class Sudoku{
     writeNumer(number){
         if(this.actualItem){
            this.actualItem.textContent = number;
+           this.removeSelectColor();
         } 
     }
 
     removeNumber(){
         if(this.actualItem){
             this.actualItem.textContent = '';
+            this.removeSelectColor();
         }
+    }
+
+    removeSelectColor(){
+        this.actualItem.classList.remove('select');
+        this.actualItem = null;
     }
 }
 

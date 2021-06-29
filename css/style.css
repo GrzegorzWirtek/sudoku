@@ -78,7 +78,7 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   background-color: white;
-  color: blue;
+  color: #4e3bcc;
 }
 
 @media (min-width: 355px) {
@@ -98,28 +98,28 @@ body {
 }
 
 .b {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #797979;
 }
 
 .r-b {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid #797979;
+  border-bottom: 1px solid #797979;
 }
 
 .bold-r {
-  border-right: 2px solid black;
+  border-right: 2px solid #797979;
 }
 
 .bold-b {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #797979;
 }
 
 .bold-t {
-  border-top: 2px solid black;
+  border-top: 2px solid #797979;
 }
 
 .bold-l {
-  border-left: 2px solid black;
+  border-left: 2px solid #797979;
 }
 
 .key-board {
@@ -188,7 +188,7 @@ body {
   color: white;
   font-family: "Jomhuria", cursive;
   font-size: 1.3rem;
-  border: 1px solid black;
+  border: 1px solid #797979;
   border-radius: 50px;
   line-height: 43px;
   cursor: pointer;
@@ -199,7 +199,7 @@ body {
 }
 
 .hard-number {
-  color: black;
+  color: #313131;
 }
 
 .add-hover:hover {
