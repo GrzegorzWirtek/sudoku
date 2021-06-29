@@ -9,15 +9,22 @@ html {
   font-family: "Jomhuria", cursive;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 body {
   background-color: #d5d5d5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header {
-  font-weight: normal;
-  letter-spacing: 1px;
   text-align: center;
-  margin: 15px auto;
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 .sudoku-container {
@@ -30,6 +37,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  min-width: 266px;
   max-width: 419px;
   margin: 0 auto;
 }
@@ -70,6 +78,7 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   background-color: white;
+  color: blue;
 }
 
 @media (min-width: 355px) {
@@ -113,17 +122,13 @@ body {
   border-left: 2px solid black;
 }
 
-.select {
-  background-color: blue;
-}
-
 .key-board {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 15px auto;
+  margin: 20px auto;
   width: 100%;
   max-width: 329px;
 }
@@ -151,9 +156,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 35px;
-  width: 30px;
-  height: 30px;
+  line-height: 38px;
+  width: 32px;
+  height: 32px;
   font-size: 1.5rem;
   border: 1px solid transparent;
   border-radius: 50%;
@@ -162,9 +167,13 @@ body {
   cursor: pointer;
 }
 
+.key-board__key:hover {
+  background-color: #2b2b46;
+}
+
 @media (min-width: 500px) {
   .key-board__key {
-    line-height: 45px;
+    line-height: 48px;
     width: 40px;
     height: 40px;
     font-size: 1.7rem;
@@ -172,7 +181,8 @@ body {
 }
 
 .key-board__remove {
-  margin: 15px auto;
+  margin: 20px auto;
+  height: 40px;
   padding: 0 25px;
   background-color: #3e3e66;
   color: white;
@@ -180,5 +190,27 @@ body {
   font-size: 1.3rem;
   border: 1px solid black;
   border-radius: 50px;
+  line-height: 43px;
+  cursor: pointer;
+}
+
+.key-board__remove:hover {
+  background-color: #2b2b46;
+}
+
+.hard-number {
+  color: black;
+}
+
+.add-hover:hover {
+  background-color: #e6e6e6;
+}
+
+.select {
+  background-color: #79c5ff;
+}
+
+.select:hover {
+  background-color: #46afff;
 }
 /*# sourceMappingURL=style.css.map */

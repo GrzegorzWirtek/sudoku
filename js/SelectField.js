@@ -1,6 +1,8 @@
 class SelectField{
     addSelectClass(item){
-        item.classList.add('select');
+        if(!item.classList.contains('hard-number')){
+            item.classList.add('select');
+        }
     }
     removeSelectClass(items){
         items.forEach(item => item.classList.remove('select'));

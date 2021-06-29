@@ -7,31 +7,37 @@
 
 $font-family: 'Jomhuria',
 cursive;
-$margin-top-bottom: 15px;
+$margin-top-bottom: 20px;
 $medium: 355px;
 $large: 500px;
 $item-size-small: 28px;
 $item-size-medium: 35px;
 $item-size-large: 45px;
 $border-color: black;
-$select-bcg-color: blue;
+$select-bcg-color: rgb(121, 197, 255);
 $bcg-color: rgb(213, 213, 213);
 $button-bgc-color: rgb(62, 62, 102);
+$hard-number-color: black;
+$choose-number-color: blue;
 
 html {
     font-size: 30px;
     font-family: $font-family;
 }
 
+h1 {
+    font-weight: normal;
+}
+
 body {
     background-color: $bcg-color;
+    user-select: none;
 }
 
 .header {
-    font-weight: normal;
-    letter-spacing: 1px;
     text-align: center;
-    margin: $margin-top-bottom auto;
+    font-size: 1.5rem;
+    margin-top: $margin-top-bottom;
 }
 
 .sudoku-container {
@@ -39,6 +45,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    min-width: ($item-size-small * 9) + 14px;
     max-width: ($item-size-large * 9) + 14px;
     margin: 0 auto;
 }
@@ -68,6 +75,7 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     background-color: white;
+    color: $choose-number-color;
 
     @media(min-width: $medium) {
         width: $item-size-medium;
@@ -80,10 +88,6 @@ body {
         height: $item-size-large;
         font-size: 1.7rem;
     }
-
-    // &:hover {
-    //     background-color: rgba(0, 0, 0, 0.131);
-    // }
 }
 
 .b {
@@ -111,10 +115,6 @@ body {
     border-left: 2px solid $border-color;
 }
 
-.select {
-    background-color: $select-bcg-color;
-}
-
 .key-board {
     display: flex;
     flex-wrap: wrap;
@@ -137,9 +137,9 @@ body {
 .key-board__key {
     display: flex;
     justify-content: center;
-    line-height: 35px;
-    width: 30px;
-    height: 30px;
+    line-height: 38px;
+    width: 32px;
+    height: 32px;
     font-size: 1.5rem;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -147,8 +147,12 @@ body {
     color: white;
     cursor: pointer;
 
+    &:hover {
+        background-color: darken($button-bgc-color, 10);
+    }
+
     @media(min-width: $large) {
-        line-height: 45px;
+        line-height: 48px;
         width: 40px;
         height: 40px;
         font-size: 1.7rem;
@@ -157,6 +161,7 @@ body {
 
 .key-board__remove {
     margin: $margin-top-bottom auto;
+    height: 40px;
     padding: 0 25px;
     background-color: $button-bgc-color;
     color: white;
@@ -164,5 +169,28 @@ body {
     font-size: 1.3rem;
     border: 1px solid $border-color;
     border-radius: 50px;
+    line-height: 43px;
+    cursor: pointer;
 
+    &:hover {
+        background-color: darken($button-bgc-color, 10);
+    }
+}
+
+.hard-number {
+    color: $hard-number-color;
+}
+
+.add-hover {
+    &:hover {
+        background-color: darken(white, 10);
+    }
+}
+
+.select {
+    background-color: $select-bcg-color;
+
+    &:hover {
+        background-color: darken($select-bcg-color, 10);
+    }
 }
