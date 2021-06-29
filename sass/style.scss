@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$font-family: 'Jomhuria',
+cursive;
+$margin-top-bottom: 15px;
+$medium: 355px;
+$large: 500px;
+$item-size-small: 28px;
+$item-size-medium: 35px;
+$item-size-large: 45px;
+$border-color: black;
+$select-bcg-color: blue;
+$bcg-color: rgb(213, 213, 213);
+$button-bgc-color: rgb(62, 62, 102);
+
+html {
+    font-size: 30px;
+    font-family: $font-family;
+}
+
+body {
+    background-color: $bcg-color;
+}
+
+.header {
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: $margin-top-bottom auto;
+}
+
+.sudoku-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: ($item-size-large * 9) + 14px;
+    margin: 0 auto;
+}
+
+.sudoku {
+    display: flex;
+    flex-wrap: wrap;
+    width: ($item-size-small * 9) + 14px;
+    height: ($item-size-small * 9) + 14px;
+
+    @media(min-width: $medium) {
+        width: ($item-size-medium * 9) + 14px;
+        height: ($item-size-medium * 9) + 14px;
+    }
+
+    @media(min-width: $large) {
+        width: ($item-size-large * 9) + 14px;
+        height: ($item-size-large * 9) + 14px;
+    }
+}
+
+.sudoku__item {
+    display: flex;
+    justify-content: center;
+    width: $item-size-small;
+    height: $item-size-small;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: white;
+
+    @media(min-width: $medium) {
+        width: $item-size-medium;
+        height: $item-size-medium;
+        font-size: 1.5rem;
+    }
+
+    @media(min-width: $large) {
+        width: $item-size-large;
+        height: $item-size-large;
+        font-size: 1.7rem;
+    }
+
+    // &:hover {
+    //     background-color: rgba(0, 0, 0, 0.131);
+    // }
+}
+
+.b {
+    border-bottom: 1px solid $border-color;
+}
+
+.r-b {
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.bold-r {
+    border-right: 2px solid $border-color;
+}
+
+.bold-b {
+    border-bottom: 2px solid $border-color;
+}
+
+.bold-t {
+    border-top: 2px solid $border-color;
+}
+
+.bold-l {
+    border-left: 2px solid $border-color;
+}
+
+.select {
+    background-color: $select-bcg-color;
+}
+
+.key-board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $margin-top-bottom auto;
+    width: 100%;
+    max-width: ($item-size-medium * 9) + 14px;
+
+    @media(min-width: $large) {
+        max-width: ($item-size-large * 9) + 14px;
+    }
+}
+
+.key-board__keys {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.key-board__key {
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: $button-bgc-color;
+    color: white;
+    cursor: pointer;
+
+    @media(min-width: $large) {
+        line-height: 45px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.7rem;
+    }
+}
+
+.key-board__remove {
+    margin: $margin-top-bottom auto;
+    padding: 0 25px;
+    background-color: $button-bgc-color;
+    color: white;
+    font-family: $font-family;
+    font-size: 1.3rem;
+    border: 1px solid $border-color;
+    border-radius: 50px;
+
+}

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 30px;
+  font-family: "Jomhuria", cursive;
+}
+
+body {
+  background-color: #d5d5d5;
+}
+
+.header {
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.sudoku-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 419px;
+  margin: 0 auto;
+}
+
+.sudoku {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 266px;
+  height: 266px;
+}
+
+@media (min-width: 355px) {
+  .sudoku {
+    width: 329px;
+    height: 329px;
+  }
+}
+
+@media (min-width: 500px) {
+  .sudoku {
+    width: 419px;
+    height: 419px;
+  }
+}
+
+.sudoku__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+@media (min-width: 355px) {
+  .sudoku__item {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .sudoku__item {
+    width: 45px;
+    height: 45px;
+    font-size: 1.7rem;
+  }
+}
+
+.b {
+  border-bottom: 1px solid black;
+}
+
+.r-b {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.bold-r {
+  border-right: 2px solid black;
+}
+
+.bold-b {
+  border-bottom: 2px solid black;
+}
+
+.bold-t {
+  border-top: 2px solid black;
+}
+
+.bold-l {
+  border-left: 2px solid black;
+}
+
+.select {
+  background-color: blue;
+}
+
+.key-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 329px;
+}
+
+@media (min-width: 500px) {
+  .key-board {
+    max-width: 419px;
+  }
+}
+
+.key-board__keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.key-board__key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 35px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #3e3e66;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .key-board__key {
+    line-height: 45px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+  }
+}
+
+.key-board__remove {
+  margin: 15px auto;
+  padding: 0 25px;
+  background-color: #3e3e66;
+  color: white;
+  font-family: "Jomhuria", cursive;
+  font-size: 1.3rem;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
