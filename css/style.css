@@ -221,4 +221,10 @@ body {
 .select:hover {
   background-color: #46afff;
 }
+
+.animation {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #ffc250;
+}
 /*# sourceMappingURL=style.css.map */

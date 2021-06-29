@@ -23,6 +23,7 @@ $bcg-color: rgb(213, 213, 213);
 $button-bgc-color: rgb(62, 62, 102);
 $hard-number-color: rgb(49, 49, 49);
 $choose-number-color: #4e3bcc;
+$animation-color: rgb(255, 194, 80);
 
 html {
     font-size: 30px;
@@ -203,4 +204,9 @@ body {
     &:hover {
         background-color: darken($select-bcg-color, 10);
     }
+}
+
+.animation {
+    transition: 0.3s ease-in-out;
+    background-color: $animation-color;
 }
