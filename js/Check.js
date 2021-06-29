@@ -58,7 +58,6 @@ class Check{
         }
     }
 
-
     checkSquare(actualCol, actualRow){     
         let row, col, limitI, limitJ;
         let counter = 0;

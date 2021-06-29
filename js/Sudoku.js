@@ -25,7 +25,7 @@ class Sudoku{
         this.attributes.createAttributes(this.items);
         
         this.placeTheBoard = new PlaceTheBoard();
-        this.placeTheBoard.place(this.items, this.boards[1]);
+        this.placeTheBoard.place(this.items, this.boards[2]);
 
         this.items.forEach(item => {
             if(!item.classList.contains('hard-number')){
