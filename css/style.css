@@ -54,8 +54,8 @@ body {
 
 @media (min-width: 355px) {
   .sudoku {
-    width: 329px;
-    height: 329px;
+    width: 347px;
+    height: 347px;
   }
 }
 
@@ -83,8 +83,8 @@ body {
 
 @media (min-width: 355px) {
   .sudoku__item {
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
     font-size: 1.5rem;
   }
 }
@@ -130,7 +130,7 @@ body {
       flex-wrap: wrap;
   margin: 20px auto;
   width: 100%;
-  max-width: 329px;
+  max-width: 347px;
 }
 
 @media (min-width: 500px) {
@@ -171,11 +171,19 @@ body {
   background-color: #2b2b46;
 }
 
+@media (min-width: 355px) {
+  .key-board__key {
+    width: 35px;
+    height: 35px;
+    line-height: 41px;
+  }
+}
+
 @media (min-width: 500px) {
   .key-board__key {
-    line-height: 48px;
-    width: 40px;
-    height: 40px;
+    line-height: 50px;
+    width: 42px;
+    height: 42px;
     font-size: 1.7rem;
   }
 }

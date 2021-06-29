@@ -11,8 +11,12 @@ $margin-top-bottom: 20px;
 $medium: 355px;
 $large: 500px;
 $item-size-small: 28px;
-$item-size-medium: 35px;
+$item-size-medium: 37px;
 $item-size-large: 45px;
+$key-size-small: 32px;
+$key-size-medium: 35px;
+$key-size-large: 42px;
+
 $border-color: rgb(121, 121, 121);
 $select-bcg-color: rgb(121, 197, 255);
 $bcg-color: rgb(213, 213, 213);
@@ -138,8 +142,8 @@ body {
     display: flex;
     justify-content: center;
     line-height: 38px;
-    width: 32px;
-    height: 32px;
+    width: $key-size-small;
+    height: $key-size-small;
     font-size: 1.5rem;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -151,10 +155,16 @@ body {
         background-color: darken($button-bgc-color, 10);
     }
 
+    @media(min-width: $medium) {
+        width: $key-size-medium;
+        height: $key-size-medium;
+        line-height: 41px;
+    }
+
     @media(min-width: $large) {
-        line-height: 48px;
-        width: 40px;
-        height: 40px;
+        line-height: 50px;
+        width: $key-size-large;
+        height: $key-size-large;
         font-size: 1.7rem;
     }
 }
