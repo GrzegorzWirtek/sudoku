@@ -200,6 +200,7 @@ body {
   border-radius: 50px;
   line-height: 43px;
   cursor: pointer;
+  outline: none;
 }
 
 .key-board__remove:hover {
