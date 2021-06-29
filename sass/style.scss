@@ -182,6 +182,7 @@ body {
     border-radius: 50px;
     line-height: 43px;
     cursor: pointer;
+    outline: none;
 
     &:hover {
         background-color: darken($button-bgc-color, 10);

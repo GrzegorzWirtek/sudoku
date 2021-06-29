@@ -63,6 +63,9 @@ class Sudoku{
         if(items.elementsCol){
             this.animation.animateCorrestRows(items.elementsCol);
         }
+        if(items.elements){
+            this.animation.animateCorrestRows(items.elements);
+        }
     }
 
     removeNumber(){
