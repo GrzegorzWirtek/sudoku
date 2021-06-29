@@ -1,12 +1,23 @@
+import { animation } from "./Animation.js";
+
 class Check{
+    constructor(){
+        this.isGameEnd = false;
+        this.animation = animation;
+    }
     checkIsComplete(actualItem, items){
+        this.checkAll();
+        if(this.isGameEnd) {
+            this.animation.animateCorrestRows(items);
+            return
+        }
         let actual = actualItem.dataset.position;
         let actualCol = actual[0];
         let actualRow = actual[2];
         let elementsRow;
         let elementsCol;
         let elements;
-        
+  
         if(
             this.checkRowOrCol(items, 2, actualRow) ||
             this.checkRowOrCol(items, 0, actualCol) ||
@@ -20,7 +31,35 @@ class Check{
         }
     }
 
-    checkSquare(actualCol, actualRow, items){     
+    checkAll(){
+        let counter= 0;
+        for(let i = 0; i<9; i++){
+            let elements = [];
+            for(let j =0; j<9; j++){
+                let item = document.querySelector(`[data-position = "${i},${j}"]`);
+
+                if(item.textContent === ''){
+                   return
+                }   
+
+                elements.push(parseInt(item.textContent));
+            }
+            elements.sort();
+            
+            for(let k = 1; k<=elements.length; k++){     
+                if(elements[k-1] === k){
+                    counter++;           
+                }
+            }
+        }
+        
+        if(counter > 80){  
+            this.isGameEnd = true;
+        }
+    }
+
+
+    checkSquare(actualCol, actualRow){     
         let row, col, limitI, limitJ;
         let counter = 0;
         let numbers = [];
@@ -68,11 +107,11 @@ class Check{
         if(numbers.length < 9) return;
         
         numbers.sort();
-            for(let i =1; i<10; i++){
-                if(parseInt(numbers[i-1]) === i){
-                    counter++;
-                }
+        for(let i =1; i<10; i++){
+            if(parseInt(numbers[i-1]) === i){
+                counter++;
             }
+        };
         if(counter > 8){    
             return elements;
         }else{
