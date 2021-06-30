@@ -29,7 +29,6 @@ class GameInterface{
         this.actualLevelItemIndex = null;
 
         this.goToInterface = () => this.goToIterfaceFn();
-
         this.selectBoard();
     }
 
@@ -63,6 +62,9 @@ class GameInterface{
             removeButton: document.querySelector('.key-board__remove'),
             boardNumber: this.selectedBoardNumber,
         });
+        this.sudoku.resetSudoku();
+        this.sudoku.initSudoku();
+        this.sudoku.keyNumberSelect();
     }
 
     animationStart(){

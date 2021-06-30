@@ -171,8 +171,6 @@ export const BOARDS = [
         {x: 8, y: 8, value: 6},
     ],
     [
-        {x: 0, y: 0, value: 5},
-        {x: 1, y: 0, value: 9},
         {x: 2, y: 0, value: 4},
         {x: 3, y: 0, value: 8},
         {x: 4, y: 0, value: 2},
@@ -251,6 +249,8 @@ export const BOARDS = [
         {x: 7, y: 7, value: 4},
         {x: 8, y: 7, value: 8},
 
+        {x: 0, y: 8, value: 2},
+        {x: 1, y: 8, value: 8},
         {x: 2, y: 8, value: 7},
         {x: 3, y: 8, value: 1},
         {x: 4, y: 8, value: 4},

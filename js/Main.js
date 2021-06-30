@@ -1,5 +1,4 @@
 import { gameInterface } from "./GameInterface.js"
-import { Sudoku } from "./Sudoku.js"
 
 class Main{
     constructor(){

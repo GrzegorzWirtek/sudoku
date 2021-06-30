@@ -20,20 +20,20 @@ export class Sudoku{
         
         this.selectField = selectField;
         this.actualItem = null;
-        this.resetSudoku();
-        this.initSudoku();
-        this.keyNumberSelect();
     }
 
     resetSudoku(){
         this.check.isGameEnd = false;
-        this.items.forEach(item => {
+        this.items.forEach(item => {                  
             item.textContent = '';
             if(item.classList.contains('hard-number')){
                 item.classList.remove('hard-number');
             };
             if(item.classList.contains('select')){
                 item.classList.remove('select');
+            }
+            if(!item.classList.contains('add-hover')){
+                item.classList.remove('add-hover');                
             }
         })
     }
