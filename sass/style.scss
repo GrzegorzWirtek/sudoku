@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
 
 * {
     padding: 0;
@@ -7,6 +8,8 @@
 
 $font-family: 'Jomhuria',
 cursive;
+$numbers-font: 'Roboto',
+sans-serif;
 $margin-top-bottom: 20px;
 $medium: 355px;
 $large: 500px;
@@ -22,7 +25,7 @@ $select-bcg-color: rgb(121, 197, 255);
 $bcg-color: rgb(213, 213, 213);
 $button-bgc-color: rgb(62, 62, 102);
 $hard-number-color: rgb(49, 49, 49);
-$choose-number-color: #4e3bcc;
+$choose-number-color: #4129df;
 $animation-color: rgb(255, 194, 80);
 
 html {
@@ -75,9 +78,11 @@ body {
 .sudoku__item {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: $item-size-small;
     height: $item-size-small;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    font-family: $numbers-font;
     cursor: pointer;
     background-color: white;
     color: $choose-number-color;
@@ -85,13 +90,12 @@ body {
     @media(min-width: $medium) {
         width: $item-size-medium;
         height: $item-size-medium;
-        font-size: 1.5rem;
     }
 
     @media(min-width: $large) {
         width: $item-size-large;
         height: $item-size-large;
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 }
 
@@ -142,10 +146,11 @@ body {
 .key-board__key {
     display: flex;
     justify-content: center;
-    line-height: 38px;
+    align-items: center;
+    font-family: $numbers-font;
     width: $key-size-small;
     height: $key-size-small;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: $button-bgc-color;
@@ -159,33 +164,38 @@ body {
     @media(min-width: $medium) {
         width: $key-size-medium;
         height: $key-size-medium;
-        line-height: 41px;
+        font-size: 1rem;
     }
 
     @media(min-width: $large) {
-        line-height: 50px;
         width: $key-size-large;
         height: $key-size-large;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 }
 
 .key-board__remove {
     margin: $margin-top-bottom auto;
-    height: 40px;
-    padding: 0 25px;
+    padding: 5px 25px;
     background-color: $button-bgc-color;
     color: white;
-    font-family: $font-family;
-    font-size: 1.3rem;
+    font-family: $numbers-font;
+    font-size: 0.8rem;
     border: 1px solid $border-color;
     border-radius: 50px;
-    line-height: 43px;
     cursor: pointer;
     outline: none;
 
     &:hover {
         background-color: darken($button-bgc-color, 10);
+    }
+
+    @media(min-width: $medium) {
+        font-size: 0.9rem;
+    }
+
+    @media(min-width: $large) {
+        font-size: 1.1rem;
     }
 }
 

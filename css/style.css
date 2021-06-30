@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,19 +74,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 28px;
   height: 28px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   background-color: white;
-  color: #4e3bcc;
+  color: #4129df;
 }
 
 @media (min-width: 355px) {
   .sudoku__item {
     width: 37px;
     height: 37px;
-    font-size: 1.5rem;
   }
 }
 
@@ -93,7 +97,7 @@ body {
   .sudoku__item {
     width: 45px;
     height: 45px;
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 
@@ -156,10 +160,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
   width: 32px;
   height: 32px;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   border: 1px solid transparent;
   border-radius: 50%;
   background-color: #3e3e66;
@@ -175,36 +182,45 @@ body {
   .key-board__key {
     width: 35px;
     height: 35px;
-    line-height: 41px;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 500px) {
   .key-board__key {
-    line-height: 50px;
     width: 42px;
     height: 42px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
 .key-board__remove {
   margin: 20px auto;
-  height: 40px;
-  padding: 0 25px;
+  padding: 5px 25px;
   background-color: #3e3e66;
   color: white;
-  font-family: "Jomhuria", cursive;
-  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
   border: 1px solid #797979;
   border-radius: 50px;
-  line-height: 43px;
   cursor: pointer;
   outline: none;
 }
 
 .key-board__remove:hover {
   background-color: #2b2b46;
+}
+
+@media (min-width: 355px) {
+  .key-board__remove {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .key-board__remove {
+    font-size: 1.1rem;
+  }
 }
 
 .hard-number {
