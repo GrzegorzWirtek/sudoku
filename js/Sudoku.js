@@ -5,8 +5,8 @@ import { selectField } from "./SelectField.js";
 import { check } from "./Check.js";
 import { animation } from "./Animation.js";
 
-class Sudoku{
-    constructor({items, keyNumbers, removeButton}){
+export class Sudoku{
+    constructor({items, keyNumbers, removeButton, boardNumber}){
         this.items = items;
         this.keyNumbers = keyNumbers;
         this.removeButton = removeButton;
@@ -14,6 +14,7 @@ class Sudoku{
         this.animation = animation;
 
         this.boards = BOARDS;
+        this.boardNumber = boardNumber;
         this.selectField = selectField;
         this.actualItem = null;
         this.initSudoku();
@@ -25,7 +26,7 @@ class Sudoku{
         this.attributes.createAttributes(this.items);
         
         this.placeTheBoard = new PlaceTheBoard();
-        this.placeTheBoard.place(this.items, this.boards[2]);
+        this.placeTheBoard.place(this.items, this.boards[this.boardNumber]);
 
         this.items.forEach(item => {
             if(!item.classList.contains('hard-number')){
@@ -82,9 +83,3 @@ class Sudoku{
         }
     }
 }
-
-export const sudoku = new Sudoku({
-    items: document.querySelectorAll('.sudoku__item'),
-    keyNumbers: document.querySelectorAll('.key-board__key'),
-    removeButton: document.querySelector('.key-board__remove')
-});

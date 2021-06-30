@@ -20,9 +20,9 @@ $key-size-small: 32px;
 $key-size-medium: 35px;
 $key-size-large: 42px;
 
+$bcg-color: rgb(213, 213, 213);
 $border-color: rgb(121, 121, 121);
 $select-bcg-color: rgb(121, 197, 255);
-$bcg-color: rgb(213, 213, 213);
 $button-bgc-color: rgb(62, 62, 102);
 $hard-number-color: rgb(49, 49, 49);
 $choose-number-color: #4129df;
@@ -42,20 +42,21 @@ body {
     user-select: none;
 }
 
-.header {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: $margin-top-bottom;
-}
-
 .sudoku-container {
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     min-width: ($item-size-small * 9) + 14px;
     max-width: ($item-size-large * 9) + 14px;
     margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: $margin-top-bottom;
 }
 
 .sudoku {
@@ -220,4 +221,124 @@ body {
 .animation {
     transition: 0.3s ease-in-out;
     background-color: $animation-color;
+}
+
+
+// --- Interface ---
+
+.interface {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bcg-color;
+    z-index: 5;
+}
+
+.interface-header {
+    font-size: 2.5rem;
+
+    @media(min-height: 500px) {
+        margin: 60px auto 15px auto;
+    }
+}
+
+.select-board {
+    width: 90%;
+    max-width: ($item-size-large * 9) + 14px;
+    margin: 0 auto;
+}
+
+.select-board__header {
+    text-align: center;
+    font-family: $numbers-font;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: darken($border-color, 5);
+}
+
+.select-board__level-container {
+    position: relative;
+    margin: 25px auto;
+    border: 2px solid $border-color;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.select-board__level-header {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    font-family: $numbers-font;
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: darken($border-color, 5);
+    background-color: $bcg-color;
+    z-index: 6;
+}
+
+.select-board__level-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $numbers-font;
+    width: $key-size-small;
+    height: $key-size-small;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: $button-bgc-color;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($button-bgc-color, 10);
+    }
+}
+
+.animation-transition {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: darken($bcg-color, 20);
+    }
+}
+
+.animation-transition__left {
+    transform: translateX(-110%);
+    animation: animation-transition-left 1s ease-in-out paused;
+}
+
+.animation-transition__right {
+    transform: translateX(110%);
+    animation: animation-transition-right 1s ease-in-out paused;
+}
+
+@keyframes animation-transition-left {
+    100% {
+        transform: translateX(110%);
+    }
+}
+
+@keyframes animation-transition-right {
+    100% {
+        transform: translateX(-110%);
+    }
 }

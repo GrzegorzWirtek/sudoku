@@ -8,10 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Sudoku</h1>
-    </header>
+    <section class="animation-transition">
+        <div class="animation-transition__item animation-transition__left"></div>
+        <div class="animation-transition__item animation-transition__right"></div>
+    </section>
+
+    <section class="interface">
+        <header class="header interface-header">
+            <h1 class="title">Sudoku</h1>
+        </header>
+        <article class="select-board">
+            <h2 class="select-board__header">Select level</h2>
+            <div class="select-board__level-container">
+                <h3 class="select-board__level-header">Easy</h3>
+                <div class="select-board__level-number">1</div>
+                <div class="select-board__level-number">2</div>
+                <div class="select-board__level-number">3</div>
+            </div>
+            <div class="select-board__level-container">
+                <h3 class="select-board__level-header">Medium</h3>
+                <div class="select-board__level-number">1</div>
+                <div class="select-board__level-number">2</div>
+                <div class="select-board__level-number">3</div>
+            </div>
+            <div class="select-board__level-container">
+                <h3 class="select-board__level-header">Hard</h3>
+                <div class="select-board__level-number">1</div>
+                <div class="select-board__level-number">2</div>
+                <div class="select-board__level-number">3</div>
+            </div>
+        </article>
+    </section>
+
     <main class="sudoku-container">
+        <header class="header">
+            <h1 class="title">Sudoku</h1>
+        </header>
         <article class="sudoku">
             <div class="sudoku__item bold-l bold-t r-b"></div>
             <div class="sudoku__item bold-t r-b"></div>

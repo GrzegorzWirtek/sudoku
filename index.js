@@ -1,1 +1,1 @@
-import { sudoku } from "./js/Sudoku.js";
+import { main } from "./js/Main.js";
