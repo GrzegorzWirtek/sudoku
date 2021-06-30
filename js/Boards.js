@@ -171,10 +171,6 @@ export const BOARDS = [
         {x: 8, y: 8, value: 6},
     ],
     [
-        {x: 2, y: 0, value: 4},
-        {x: 3, y: 0, value: 8},
-        {x: 4, y: 0, value: 2},
-        {x: 5, y: 0, value: 1},
         {x: 6, y: 0, value: 6},
         {x: 7, y: 0, value: 3},
         {x: 8, y: 0, value: 7},

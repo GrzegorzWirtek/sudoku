@@ -28,11 +28,10 @@ export class Sudoku{
             item.textContent = '';
             if(item.classList.contains('hard-number')){
                 item.classList.remove('hard-number');
+                console.log('tak, hard');
+                
             };
-            if(item.classList.contains('select')){
-                item.classList.remove('select');
-            }
-            if(!item.classList.contains('add-hover')){
+            if(item.classList.contains('add-hover')){
                 item.classList.remove('add-hover');                
             }
         })
@@ -66,10 +65,15 @@ export class Sudoku{
     writeNumer(number){
         if(this.actualItem){
            this.actualItem.textContent = number;
-           
+        
           if(this.check.checkIsComplete(this.actualItem, this.items)){
             if(this.check.checkIsComplete(this.actualItem, this.items) === 'end'){
                 this.gameInterface.showEndPage();
+                this.selectField.removeSelectClass(this.items);
+                this.actualItem = null;
+                setTimeout(()=>{
+                    this.items.forEach(item => item.replaceWith(item.cloneNode(true)));
+                },2500);
                 return
             }   
             this.showIsCorrect(this.check.checkIsComplete(this.actualItem, this.items));

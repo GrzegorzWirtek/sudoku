@@ -63,8 +63,8 @@ class GameInterface{
             boardNumber: this.selectedBoardNumber,
         });
         this.sudoku.resetSudoku();
-        this.sudoku.initSudoku();
         this.sudoku.keyNumberSelect();
+        this.sudoku.initSudoku();
     }
 
     animationStart(){
