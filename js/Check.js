@@ -9,7 +9,7 @@ class Check{
         this.checkAll();
         if(this.isGameEnd) {
             this.animation.animateCorrestRows(items);
-            return
+            return 'end';
         }
         let actual = actualItem.dataset.position;
         let actualCol = actual[0];
@@ -31,7 +31,7 @@ class Check{
         }
     }
 
-    checkAll(){
+    checkAll(){        
         let counter= 0;
         for(let i = 0; i<9; i++){
             let elements = [];
@@ -52,7 +52,6 @@ class Check{
                 }
             }
         }
-        
         if(counter > 80){  
             this.isGameEnd = true;
         }

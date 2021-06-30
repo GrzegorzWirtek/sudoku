@@ -1,3 +1,4 @@
+import { gameInterface } from "./GameInterface.js";
 import { Attributes } from "./Attributes.js";
 import { BOARDS } from "./Boards.js";
 import { PlaceTheBoard } from "./PlaceTheBoard.js";
@@ -7,6 +8,7 @@ import { animation } from "./Animation.js";
 
 export class Sudoku{
     constructor({items, keyNumbers, removeButton, boardNumber}){
+        this.gameInterface = gameInterface;
         this.items = items;
         this.keyNumbers = keyNumbers;
         this.removeButton = removeButton;
@@ -15,10 +17,25 @@ export class Sudoku{
 
         this.boards = BOARDS;
         this.boardNumber = boardNumber;
+        
         this.selectField = selectField;
         this.actualItem = null;
+        this.resetSudoku();
         this.initSudoku();
         this.keyNumberSelect();
+    }
+
+    resetSudoku(){
+        this.check.isGameEnd = false;
+        this.items.forEach(item => {
+            item.textContent = '';
+            if(item.classList.contains('hard-number')){
+                item.classList.remove('hard-number');
+            };
+            if(item.classList.contains('select')){
+                item.classList.remove('select');
+            }
+        })
     }
 
     initSudoku(){
@@ -51,6 +68,10 @@ export class Sudoku{
            this.actualItem.textContent = number;
            
           if(this.check.checkIsComplete(this.actualItem, this.items)){
+            if(this.check.checkIsComplete(this.actualItem, this.items) === 'end'){
+                this.gameInterface.showEndPage();
+                return
+            }   
             this.showIsCorrect(this.check.checkIsComplete(this.actualItem, this.items));
           }     
         } 
