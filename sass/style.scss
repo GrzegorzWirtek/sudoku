@@ -383,3 +383,12 @@ body {
     flex-basis: 100%;
     text-align: center;
 }
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $numbers-font;
+    font-size: 0.4rem;
+}

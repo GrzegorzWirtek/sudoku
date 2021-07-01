@@ -434,4 +434,14 @@ body {
       flex-basis: 100%;
   text-align: center;
 }
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.4rem;
+}
 /*# sourceMappingURL=style.css.map */
