@@ -250,8 +250,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100vh;
   background-color: #10e7dc;
   z-index: 5;
+}
+
+@media (max-height: 600px) {
+  .interface {
+    padding-bottom: 20px;
+  }
 }
 
 .interface-header {
@@ -436,12 +443,18 @@ body {
 }
 
 .footer {
-  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.4rem;
+  margin-bottom: 10px;
+}
+
+.footer-interface {
+  position: absolute;
   bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-family: "Roboto", sans-serif;
-  font-size: 0.4rem;
 }
 /*# sourceMappingURL=style.css.map */

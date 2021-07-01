@@ -235,8 +235,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 100vh;
     background-color: $bcg-color;
     z-index: 5;
+
+    @media(max-height:600px) {
+        padding-bottom: 20px;
+    }
 }
 
 .interface-header {
@@ -385,10 +390,16 @@ body {
 }
 
 .footer {
-    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-family: $numbers-font;
+    font-size: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.footer-interface {
+    position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: $numbers-font;
-    font-size: 0.4rem;
 }
