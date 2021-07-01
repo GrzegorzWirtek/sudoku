@@ -28,8 +28,6 @@ export class Sudoku{
             item.textContent = '';
             if(item.classList.contains('hard-number')){
                 item.classList.remove('hard-number');
-                console.log('tak, hard');
-                
             };
             if(item.classList.contains('add-hover')){
                 item.classList.remove('add-hover');                

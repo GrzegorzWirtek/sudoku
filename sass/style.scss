@@ -306,8 +306,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
+    width: 100%;
     overflow: hidden;
     z-index: 10;
 
@@ -315,31 +315,33 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: 100%;
         background-color: darken($bcg-color, 20);
     }
 }
 
 .animation-transition__left {
-    transform: translateX(-110%);
-    animation: animation-transition-left 1s ease-in-out paused;
+    transform: translateX(-105%);
+    animation: animation-transition-left 1s cubic-bezier(0, .35, .98, .72);
+    width: 120%;
 }
 
 .animation-transition__right {
-    transform: translateX(110%);
-    animation: animation-transition-right 1s ease-in-out paused;
+    transform: translateX(-105%);
+    animation: animation-transition-right 0.7s 0.2s cubic-bezier(.23, .56, .89, .72);
+    width: 70%;
+    background-color: darken($bcg-color, 30);
 }
 
 @keyframes animation-transition-left {
     100% {
-        transform: translateX(110%);
+        transform: translateX(105%);
     }
 }
 
 @keyframes animation-transition-right {
     100% {
-        transform: translateX(-110%);
+        transform: translateX(180%);
     }
 }
 

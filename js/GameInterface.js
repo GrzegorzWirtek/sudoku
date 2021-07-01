@@ -42,7 +42,7 @@ class GameInterface{
                     setTimeout(()=>{
                         this.hideInterface();
                         this.showSudoku();
-                     }, this.animationTime/2);  
+                     }, this.animationTime/3);  
                 }
             })
         })
@@ -100,7 +100,7 @@ class GameInterface{
         setTimeout(()=>{
             this.correctConainer.style.opacity = '1';
             this.sudokuContainer.style.filter = 'blur(2px)';
-        }, this.animationTime);
+        }, this.animationTime*1.6);
         this.nextSudokuButton.addEventListener('click', this.goToInterface);
     }
 
@@ -116,7 +116,7 @@ class GameInterface{
             this.showInterface();
             this.hideSudoku();
             this.hideEndPage();
-         }, this.animationTime/2);
+         }, this.animationTime/3);
     }
 }
 
