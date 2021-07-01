@@ -316,37 +316,36 @@ body {
 
     &__item {
         position: absolute;
-        top: 0;
-        left: 0;
         height: 100%;
+        left: 0;
     }
 }
 
 .animation-transition__left {
-    transform: translateX(-105%);
-    animation: animation-transition-left 1s cubic-bezier(0, .35, .98, .72);
-    width: 120%;
+    transform: translateX(-150%);
+    animation: animation-transition-left 1s cubic-bezier(.21, .48, .85, .49);
+    width: 150%;
     background-color: darken($curtain-color, 10);
 }
 
-.animation-transition__right {
-    transform: translateX(-105%);
-    animation: animation-transition-right 0.7s 0.2s cubic-bezier(.23, .56, .89, .72);
-    width: 70%;
-    background-color: $curtain-color;
-}
+// .animation-transition__right {
+//     transform: translateX(-105%);
+//     animation: animation-transition-right 0.7s 0.2s cubic-bezier(.23, .56, .89, .72);
+//     width: 100%;
+//     background-color: $curtain-color;
+// }
 
 @keyframes animation-transition-left {
     100% {
-        transform: translateX(105%);
+        transform: translateX(200%);
     }
 }
 
-@keyframes animation-transition-right {
-    100% {
-        transform: translateX(180%);
-    }
-}
+// @keyframes animation-transition-right {
+//     100% {
+//         transform: translateX(200%);
+//     }
+// }
 
 .not-active {
     opacity: 0.2;

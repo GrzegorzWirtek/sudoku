@@ -42,7 +42,7 @@ class GameInterface{
                     setTimeout(()=>{
                         this.hideInterface();
                         this.showSudoku();
-                     }, this.animationTime/3);  
+                     }, this.animationTime/2);  
                 }
             })
         })
@@ -116,7 +116,7 @@ class GameInterface{
             this.showInterface();
             this.hideSudoku();
             this.hideEndPage();
-         }, this.animationTime/3);
+         }, this.animationTime/2);
     }
 }
 
