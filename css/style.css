@@ -231,17 +231,17 @@ body {
 }
 
 .select {
-  background-color: #eaf5ff;
+  background-color: #c2e0fc;
 }
 
 .select:hover {
-  background-color: #b7ddff;
+  background-color: #91c7fa;
 }
 
 .animation {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background-color: #05ff58;
+  background-color: #00f308;
 }
 
 .interface {
@@ -357,7 +357,7 @@ body {
   -webkit-animation: animation-transition-left 1s ease-in-out;
           animation: animation-transition-left 1s ease-in-out;
   width: 110%;
-  background-color: #637a90;
+  background-color: #295278;
 }
 
 .animation-transition__right {
@@ -366,7 +366,7 @@ body {
   -webkit-animation: animation-transition-right 1s ease-in-out;
           animation: animation-transition-right 1s ease-in-out;
   width: 110%;
-  background-color: #7f93a7;
+  background-color: #366c9e;
 }
 
 @-webkit-keyframes animation-transition-left {
