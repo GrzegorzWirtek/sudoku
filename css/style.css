@@ -15,7 +15,7 @@ h1 {
 }
 
 body {
-  background-color: #d5d5d5;
+  background-color: #10e7dc;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -39,6 +39,7 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 20px;
+  color: #0074e1;
 }
 
 .sudoku {
@@ -100,28 +101,28 @@ body {
 }
 
 .b {
-  border-bottom: 1px solid #797979;
+  border-bottom: 1px solid #798591;
 }
 
 .r-b {
-  border-right: 1px solid #797979;
-  border-bottom: 1px solid #797979;
+  border-right: 1px solid #798591;
+  border-bottom: 1px solid #798591;
 }
 
 .bold-r {
-  border-right: 2px solid #797979;
+  border-right: 2px solid #798591;
 }
 
 .bold-b {
-  border-bottom: 2px solid #797979;
+  border-bottom: 2px solid #798591;
 }
 
 .bold-t {
-  border-top: 2px solid #797979;
+  border-top: 2px solid #798591;
 }
 
 .bold-l {
-  border-left: 2px solid #797979;
+  border-left: 2px solid #798591;
 }
 
 .key-board {
@@ -167,13 +168,13 @@ body {
   font-size: 0.9rem;
   border: 1px solid transparent;
   border-radius: 50%;
-  background-color: #3e3e66;
+  background-color: #254d72;
   color: white;
   cursor: pointer;
 }
 
 .key-board__key:hover {
-  background-color: #2b2b46;
+  background-color: #19334b;
 }
 
 @media (min-width: 355px) {
@@ -195,18 +196,18 @@ body {
 .sudoku-button {
   margin: 20px auto;
   padding: 5px 25px;
-  background-color: #3e3e66;
+  background-color: #254d72;
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
-  border: 1px solid #797979;
+  border: 1px solid #798591;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
 }
 
 .sudoku-button:hover {
-  background-color: #2b2b46;
+  background-color: #19334b;
 }
 
 @media (min-width: 355px) {
@@ -230,17 +231,17 @@ body {
 }
 
 .select {
-  background-color: #79c5ff;
+  background-color: #eaf5ff;
 }
 
 .select:hover {
-  background-color: #46afff;
+  background-color: #b7ddff;
 }
 
 .animation {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background-color: #ffc250;
+  background-color: #05ff58;
 }
 
 .interface {
@@ -249,7 +250,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #d5d5d5;
+  background-color: #10e7dc;
   z-index: 5;
 }
 
@@ -280,13 +281,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 0.8rem;
-  color: #6c6c6c;
+  color: #6c7884;
 }
 
 .select-board__level-container {
   position: relative;
   margin: 25px auto;
-  border: 2px solid #797979;
+  border: 2px solid #798591;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,8 +308,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.6rem;
   font-weight: normal;
-  color: #6c6c6c;
-  background-color: #d5d5d5;
+  color: #6c7884;
+  background-color: #10e7dc;
   z-index: 6;
 }
 
@@ -328,7 +329,7 @@ body {
   font-size: 0.9rem;
   border: 1px solid transparent;
   border-radius: 50%;
-  background-color: #3e3e66;
+  background-color: #254d72;
   color: white;
   cursor: pointer;
 }
@@ -349,7 +350,6 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #a2a2a2;
 }
 
 .animation-transition__left {
@@ -358,6 +358,7 @@ body {
   -webkit-animation: animation-transition-left 1s cubic-bezier(0, 0.35, 0.98, 0.72);
           animation: animation-transition-left 1s cubic-bezier(0, 0.35, 0.98, 0.72);
   width: 120%;
+  background-color: #637a90;
 }
 
 .animation-transition__right {
@@ -366,7 +367,7 @@ body {
   -webkit-animation: animation-transition-right 0.7s 0.2s cubic-bezier(0.23, 0.56, 0.89, 0.72);
           animation: animation-transition-right 0.7s 0.2s cubic-bezier(0.23, 0.56, 0.89, 0.72);
   width: 70%;
-  background-color: #898989;
+  background-color: #7f93a7;
 }
 
 @-webkit-keyframes animation-transition-left {
@@ -402,7 +403,7 @@ body {
 }
 
 .interface-hover:hover {
-  background-color: #2b2b46;
+  background-color: #19334b;
 }
 
 .correct {

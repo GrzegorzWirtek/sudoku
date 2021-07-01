@@ -20,13 +20,15 @@ $key-size-small: 32px;
 $key-size-medium: 35px;
 $key-size-large: 42px;
 
-$bcg-color: rgb(213, 213, 213);
-$border-color: rgb(121, 121, 121);
-$select-bcg-color: rgb(121, 197, 255);
-$button-bgc-color: rgb(62, 62, 102);
+$bcg-color: #10e7dc;
+$button-bgc-color: #254d72;
+$font-color: #0074e1;
+$border-color: #798591;
+$animation-color: #05ff58;
+$curtain-color: #7f93a7;
+$select-bcg-color: rgb(234, 245, 255);
 $hard-number-color: rgb(49, 49, 49);
 $choose-number-color: #4129df;
-$animation-color: rgb(255, 194, 80);
 $correct-bgc-color: rgba(255, 255, 255, 0.734);
 
 html {
@@ -57,6 +59,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     margin-top: $margin-top-bottom;
+    color: $font-color;
 }
 
 .sudoku {
@@ -316,7 +319,6 @@ body {
         top: 0;
         left: 0;
         height: 100%;
-        background-color: darken($bcg-color, 20);
     }
 }
 
@@ -324,13 +326,14 @@ body {
     transform: translateX(-105%);
     animation: animation-transition-left 1s cubic-bezier(0, .35, .98, .72);
     width: 120%;
+    background-color: darken($curtain-color, 10);
 }
 
 .animation-transition__right {
     transform: translateX(-105%);
     animation: animation-transition-right 0.7s 0.2s cubic-bezier(.23, .56, .89, .72);
     width: 70%;
-    background-color: darken($bcg-color, 30);
+    background-color: $curtain-color;
 }
 
 @keyframes animation-transition-left {
