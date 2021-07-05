@@ -49,6 +49,13 @@ export class Sudoku{
         });
     }
 
+    viewActualLevel(index, levelElement){
+        let level = 'Easy';
+        if(index>3 && index <=6) level = 'Medium';
+        else if(index>6) level = 'Hard';
+        levelElement.textContent = level + ' ' + index;    
+    }
+
     chooseField(item){
         this.actualItem = item;
         this.selectField.removeSelectClass(this.items);

@@ -19,6 +19,7 @@ $item-size-large: 45px;
 $key-size-small: 32px;
 $key-size-medium: 35px;
 $key-size-large: 42px;
+$footer-opacity: 0.7;
 
 $bcg-color: #10e7dc;
 $button-bgc-color: #254d72;
@@ -62,7 +63,21 @@ body {
     color: $font-color;
 }
 
+.sudoku__actual-level {
+    position: absolute;
+    top: -19px;
+    right: 2px;
+}
+
+.sudoku__actual-level-text {
+    font-family: $numbers-font;
+    font-size: 0.5rem;
+    color: darken($border-color, 2);
+    font-weight: 600;
+}
+
 .sudoku {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: ($item-size-small * 9) + 14px;
@@ -395,6 +410,7 @@ body {
     font-family: $numbers-font;
     font-size: 0.4rem;
     margin-bottom: 10px;
+    color: darken($border-color, 7);
 }
 
 .footer-interface {
@@ -402,4 +418,5 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    color: darken($border-color, 7);
 }

@@ -42,7 +42,21 @@ body {
   color: #0074e1;
 }
 
+.sudoku__actual-level {
+  position: absolute;
+  top: -19px;
+  right: 2px;
+}
+
+.sudoku__actual-level-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.5rem;
+  color: #73808c;
+  font-weight: 600;
+}
+
 .sudoku {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +462,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.4rem;
   margin-bottom: 10px;
+  color: #68737e;
 }
 
 .footer-interface {
@@ -456,5 +471,6 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  color: #68737e;
 }
 /*# sourceMappingURL=style.css.map */
