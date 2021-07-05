@@ -35,6 +35,12 @@ body {
   margin: 0 auto;
 }
 
+@media (min-height: 750px) {
+  .sudoku-container {
+    margin-top: 5vh;
+  }
+}
+
 .header {
   text-align: center;
   font-size: 1.5rem;
@@ -50,9 +56,13 @@ body {
 
 .sudoku__actual-level-text {
   font-family: "Roboto", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.4rem;
   color: #798591;
   font-weight: 600;
+}
+
+.sudoku__actual-level-span {
+  font-size: 0.6rem;
 }
 
 .sudoku {
@@ -432,7 +442,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  min-height: 620px;
+  min-height: 640px;
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -463,6 +473,14 @@ body {
   font-size: 0.4rem;
   margin-bottom: 10px;
   color: #68737e;
+}
+
+@media (min-height: 750px) {
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
 }
 
 .footer-interface {

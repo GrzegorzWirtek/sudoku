@@ -10,6 +10,7 @@ const ANIMATION_TRANSITION_RIGHT = document.querySelector('.animation-transition
 const CORRECT_CONTAINER = document.querySelector('.correct');
 const NEXT_SUDOKU_BUTTON = document.querySelector('.correct__button');
 const ACTUAL_LEVEL = document.querySelector('.sudoku__actual-level-text');
+const ACTUAL_LEVEL_SPAN_SCLASS = 'sudoku__actual-level-span';
 const ANIMATION_TIME = 1000;
 
 class GameInterface{
@@ -26,6 +27,7 @@ class GameInterface{
         this.correctConainer = CORRECT_CONTAINER;
         this.nextSudokuButton = NEXT_SUDOKU_BUTTON;
         this.actualLevel = ACTUAL_LEVEL;
+        this.actualLevelSpanClass = ACTUAL_LEVEL_SPAN_SCLASS;
 
         this.actualLevelItem = null;
         this.actualLevelItemIndex = null;
@@ -67,7 +69,7 @@ class GameInterface{
         this.sudoku.resetSudoku();
         this.sudoku.keyNumberSelect();
         this.sudoku.initSudoku();
-        this.sudoku.viewActualLevel(index+1, this.actualLevel)
+        this.sudoku.viewActualLevel(index+1, this.actualLevel, this.actualLevelSpanClass)
     }
 
     animationStart(){

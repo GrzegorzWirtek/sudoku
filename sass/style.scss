@@ -54,6 +54,10 @@ body {
     min-width: ($item-size-small * 9) + 14px;
     max-width: ($item-size-large * 9) + 14px;
     margin: 0 auto;
+
+    @media (min-height: 750px) {
+        margin-top: 5vh;
+    }
 }
 
 .header {
@@ -71,9 +75,13 @@ body {
 
 .sudoku__actual-level-text {
     font-family: $numbers-font;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     color: $border-color;
     font-weight: 600;
+}
+
+.sudoku__actual-level-span {
+    font-size: 0.6rem;
 }
 
 .sudoku {
@@ -386,7 +394,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    min-height: 620px;
+    min-height: 640px;
     display: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -411,6 +419,12 @@ body {
     font-size: 0.4rem;
     margin-bottom: 10px;
     color: darken($border-color, 7);
+
+    @media (min-height: 750px) {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+    }
 }
 
 .footer-interface {

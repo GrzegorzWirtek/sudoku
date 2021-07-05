@@ -49,11 +49,11 @@ export class Sudoku{
         });
     }
 
-    viewActualLevel(index, levelElement){
+    viewActualLevel(index, levelElement, spanClass){
         let level = 'Easy';
         if(index>3 && index <=6) level = 'Medium';
         else if(index>6) level = 'Hard';
-        levelElement.textContent = level + ' ' + index;    
+        levelElement.innerHTML = `${level} <span class = "${spanClass}">${index}</span>`;  
     }
 
     chooseField(item){
