@@ -72,7 +72,7 @@ body {
 .sudoku__actual-level-text {
     font-family: $numbers-font;
     font-size: 0.5rem;
-    color: darken($border-color, 2);
+    color: $border-color;
     font-weight: 600;
 }
 
