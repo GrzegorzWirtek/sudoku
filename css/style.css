@@ -62,7 +62,7 @@ body {
 }
 
 .sudoku__actual-level-span {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 .sudoku {
@@ -102,7 +102,7 @@ body {
           align-items: center;
   width: 28px;
   height: 28px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   background-color: white;
@@ -355,14 +355,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Roboto", sans-serif;
-  width: 32px;
-  height: 32px;
+  width: 37px;
+  height: 37px;
   font-size: 0.9rem;
   border: 1px solid transparent;
   border-radius: 50%;
   background-color: #254d72;
   color: white;
   cursor: pointer;
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+.select-board__level-number--padding {
+  padding-right: 2px;
 }
 
 .animation-transition {

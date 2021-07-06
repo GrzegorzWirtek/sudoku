@@ -81,7 +81,7 @@ body {
 }
 
 .sudoku__actual-level-span {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 
 .sudoku {
@@ -108,7 +108,7 @@ body {
     align-items: center;
     width: $item-size-small;
     height: $item-size-small;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: $numbers-font;
     cursor: pointer;
     background-color: white;
@@ -322,14 +322,20 @@ body {
     justify-content: center;
     align-items: center;
     font-family: $numbers-font;
-    width: $key-size-small;
-    height: $key-size-small;
+    width: $key-size-small+5px;
+    height: $key-size-small+5px;
     font-size: 0.9rem;
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: $button-bgc-color;
     color: white;
     cursor: pointer;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.select-board__level-number--padding {
+    padding-right: 2px;
 }
 
 .animation-transition {

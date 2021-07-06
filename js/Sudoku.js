@@ -51,7 +51,7 @@ export class Sudoku{
 
     viewActualLevel(index, levelElement, spanClass){
         let level = 'Easy';
-        if(index>3 && index <=6) level = 'Medium';
+        if(index>3 && index <=7) level = 'Medium';
         else if(index>6) level = 'Hard';
         levelElement.innerHTML = `${level} <span class = "${spanClass}">${index}</span>`;  
     }
