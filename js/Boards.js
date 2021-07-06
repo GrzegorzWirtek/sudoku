@@ -260,42 +260,6 @@ export const BOARDS = [
         {x: 8, y: 8, value: 3},
     ],
     [
-        {x: 0, y: 0, value: 8},
-        {x: 5, y: 0, value: 4},    
-        {x: 7, y: 0, value: 3},
-
-        {x: 1, y: 1, value: 3},
-        {x: 2, y: 1, value: 2},
-
-        {x: 1, y: 2, value: 4},
-        {x: 6, y: 2, value: 8},
-        {x: 8, y: 2, value: 1},
-
-        {x: 1, y: 3, value: 1},
-        {x: 2, y: 3, value: 7},
-
-        {x: 7, y: 4, value: 7},
-        {x: 8, y: 4, value: 2},
-
-        {x: 1, y: 5, value: 9},
-        {x: 3, y: 5, value: 5},
-        {x: 5, y: 5, value: 2},
-        {x: 6, y: 5, value: 1},
-        {x: 8, y: 5, value: 3},
-
-        {x: 0, y: 6, value: 6},
-        {x: 3, y: 6, value: 8},
-        {x: 8, y: 6, value: 7},
-
-        {x: 2, y: 7, value: 5},
-        {x: 5, y: 7, value: 1},
-   
-        {x: 2, y: 8, value: 1},
-        {x: 4, y: 8, value: 2},
-        {x: 5, y: 8, value: 5},
-        {x: 8, y: 8, value: 8},
-    ],
-    [
         {x: 3, y: 0, value: 9}, 
         {x: 5, y: 0, value: 5},      
         {x: 7, y: 0, value: 6},
@@ -338,6 +302,42 @@ export const BOARDS = [
         {x: 1, y: 8, value: 9},
         {x: 0, y: 8, value: 5},
         {x: 7, y: 8, value: 8},
+    ],
+    [
+        {x: 0, y: 0, value: 8},
+        {x: 5, y: 0, value: 4},    
+        {x: 7, y: 0, value: 3},
+
+        {x: 1, y: 1, value: 3},
+        {x: 2, y: 1, value: 2},
+
+        {x: 1, y: 2, value: 4},
+        {x: 6, y: 2, value: 8},
+        {x: 8, y: 2, value: 1},
+
+        {x: 1, y: 3, value: 1},
+        {x: 2, y: 3, value: 7},
+
+        {x: 7, y: 4, value: 7},
+        {x: 8, y: 4, value: 2},
+
+        {x: 1, y: 5, value: 9},
+        {x: 3, y: 5, value: 5},
+        {x: 5, y: 5, value: 2},
+        {x: 6, y: 5, value: 1},
+        {x: 8, y: 5, value: 3},
+
+        {x: 0, y: 6, value: 6},
+        {x: 3, y: 6, value: 8},
+        {x: 8, y: 6, value: 7},
+
+        {x: 2, y: 7, value: 5},
+        {x: 5, y: 7, value: 1},
+   
+        {x: 2, y: 8, value: 1},
+        {x: 4, y: 8, value: 2},
+        {x: 5, y: 8, value: 5},
+        {x: 8, y: 8, value: 8},
     ],
     [
         {x: 1, y: 0, value: 9},
