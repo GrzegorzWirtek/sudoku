@@ -292,15 +292,15 @@ export const BOARDS = [
         {x: 4, y: 6, value: 7},
         {x: 7, y: 6, value: 2},
 
-        {x: 0, y: 7, value: 8},
+        {x: 1, y: 7, value: 8},
         {x: 2, y: 7, value: 2},
         {x: 3, y: 7, value: 4},
         {x: 4, y: 7, value: 5},
         {x: 6, y: 7, value: 3},
         {x: 8, y: 7, value: 7},
    
-        {x: 1, y: 8, value: 9},
-        {x: 0, y: 8, value: 5},
+        {x: 0, y: 8, value: 9},
+        {x: 1, y: 8, value: 5},
         {x: 7, y: 8, value: 8},
     ],
     [
