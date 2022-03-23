@@ -268,15 +268,7 @@ body {
 }
 
 .interface-header {
-    font-size: 2.5rem;
-
-    @media(min-height: 500px) {
-        margin: 10px auto 15px auto;
-    }
-
-    @media (min-width: 1024px) {
-        margin: 60px auto 15px auto;
-    }
+    font-size: 2rem;
 }
 
 .select-board {
@@ -335,7 +327,7 @@ body {
 }
 
 .select-board__level-number--padding {
-    padding-right: 2px;
+    padding-right: 3px;
 }
 
 .animation-transition {
