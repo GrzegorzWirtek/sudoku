@@ -13,7 +13,6 @@ Visit page: **[Sudoku](https://grzegorzwirtek.github.io/sudoku/)**
 Project is created with:
 
 - **HTML**
-- **CSS**
 - **SASS/SCSS**
 - **JavaScript**
 
